@@ -36,3 +36,26 @@
         background: #94a3b8;
     }
 </style>
+
+<div class="counter-box">
+
+    <h2>Current Number: <span id="number">0</span></h2>
+
+    <button onclick="addNumber()">Add</button>
+    <button onclick="subtractNumber()">Subtract</button>
+
+</div>
+
+<script>
+    let number = 0;
+
+    function addNumber() {
+        number = number + 1;
+        document.getElementById("number").textContent = number;
+    }
+
+    function subtractNumber() {
+        number = number - 1;
+        document.getElementById("number").textContent = number;
+    }
+</script>
